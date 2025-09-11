@@ -49,4 +49,10 @@ M.mason = {
   },
 }
 
+-- M.ui = {
+--       tabufline = {
+--          lazyload = false
+--      }
+-- }
+
 return M
