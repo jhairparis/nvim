@@ -16,3 +16,6 @@ o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 vim.cmd(string.format([[ highlight FoldColumn guibg=%s ]], colors.bg))
 
 -- o.cursorlineopt ='both' -- to enable cursorline!
+
+-- Saves the session options to be used
+o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
