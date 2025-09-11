@@ -1,13 +1,14 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
 
+local lspconfig = require "lspconfig"
+local nvlsp = require "nvchad.configs.lspconfig"
+
 local servers = { "html", "cssls", "ts_ls", "tailwindcss", "eslint" }
 vim.lsp.enable(servers)
 
--- read :h vim.lsp.config for changing options of lsp servers 
+-- read :h vim.lsp.config for changing options of lsp servers
 
--- local lspconfig = require "lspconfig"
--- local nvlsp = require "nvchad.configs.lspconfig"
 -- lsps with default config
 -- for _, lsp in ipairs(servers) do
 -- lspconfig[lsp].setup {
